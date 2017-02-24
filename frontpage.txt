@@ -1,0 +1,42 @@
+<!--Start of code-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Frontpage for Nick's personal website -->
+<style>
+    <!--The Background image for the frontpage-->
+    body{
+        background-image: url("./images/background_tele.JPG");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<!--Header information-->
+<head>
+    <title>Nickalas Reynolds</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<!--Information to Display on front page-->
+<body>
+    <div class="container-fluid">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
+
+    <!--Example Nav Bar-->
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
+</body>
+
+</html>
+<!-- end of code-->
