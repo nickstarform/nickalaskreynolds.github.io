@@ -1,0 +1,62 @@
+html, body, .v-align {
+  height: 100%;
+}
+
+.v-align {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content {
+  height: 128px;
+  color: white;
+}
+.content img { padding-right: 8px; }
+
+.hello { text-align: left; }
+.hello h1 { margin: 0; }
+
+.words {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.cycler ul li { text-align: left; }
+.cycler ul li span {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cycler {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 1em;
+  height: 30px;
+}
+
+.about {
+  background-color: rgba(17,17,17,.9);
+  color: #c4c4c4;
+  width: 100%;
+  padding: 5px 5px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+
+.about p {
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+
+.about .social {
+  font-size: 22px;
+}
+
+.about .social a i {
+  padding-right: 4px;
+  color: #c4c4c4;
+}
+
+.about .social a i:hover { color: white; }
