@@ -46,14 +46,27 @@ html, body, .v-align {
   height: 2em;
 }
 
-.cycler_new ul li { text-align: left; }
-.cycler_new ul li span {
+.cycler_l ul li { text-align: left; }
+.cycler_l ul li span {
   text-align: left;
   white-space: nowrap;
 }
 
-.cycler_new {
-  display: inline-block;
+.cycler_l {
+  display: list-inline;
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  height: 2em;
+}
+.cycler_r ul li { text-align: right; }
+.cycler_r ul li span {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cycler_r {
+  display: list-inline;
   position: relative;
   overflow: hidden;
   line-height: 2em;
@@ -84,3 +97,8 @@ html, body, .v-align {
 }
 
 .about .social a i:hover { color: white; }
+
+.outPopUp {
+  position: relative;
+  top: 150%;
+}
