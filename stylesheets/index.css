@@ -31,7 +31,16 @@ html, body, .v-align {
   padding-left: 0;
   overflow: hidden;
 }
-
+.linel {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+.liner {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
 .cycler ul li { text-align: left; }
 .cycler ul li span {
   text-align: left;
@@ -100,5 +109,5 @@ html, body, .v-align {
 
 .outPopUp {
   position: relative;
-  top: 150%;
+  top: 100%;
 }
