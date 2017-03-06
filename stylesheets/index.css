@@ -42,8 +42,8 @@ html, body, .v-align {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  line-height: 1em;
-  height: 30px;
+  line-height: 2em;
+  height: 2em;
 }
 
 .cycler_new ul li { text-align: left; }
@@ -56,8 +56,8 @@ html, body, .v-align {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  line-height: 1em;
-  height: 30px;
+  line-height: 2em;
+  height: 2em;
 }
 
 .about {
