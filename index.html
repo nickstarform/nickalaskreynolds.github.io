@@ -39,9 +39,9 @@ Made Feb 2017
     <link href="./css/grayscale.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/index.css">
 
-    <!--########-#-->
+    <!--##########-->
     <!-- Scripts -->
-    <!--########-#-->
+    <!--##########-->
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 
@@ -50,17 +50,26 @@ Made Feb 2017
     <!--###########################-->
     <script src="./js/bootstrap.min.js"></script>
 
-    <!--#################-#-->
+    <!--###################-->
     <!-- Plugin JavaScript -->
-    <!--#################-#-->
+    <!--###################-->
     <script src="./js/jquery_easing.js"></script>
 
     <!--##################-->
     <!-- Theme JavaScript -->
     <!--##################-->
     <script src="./js/collapse_toolbar.js"></script>
-
-
+	<style>
+		/* For width 400px and larger: */
+		@media only screen and (dev-min-width: 1024px) {
+			.parallax{
+				background-attachment:scroll
+			}
+			.aboutme-bg, .outro-bg, .intro-bg, .social-bg, .project-bg {
+				background-size: cover;
+			}
+		}	
+	</style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!-- [if lt IE 9]>
@@ -130,10 +139,10 @@ Made Feb 2017
     <!-- Intro Header -->
     <!--##############-->
     <header class="intro">
-        <div class="intro-body row container">
+        <div class="intro-body row container intro-bg">
             <div class="col-md-8 col-md-offset-2">
-                <img src="./img/nick.jpg" alt="Nick Profile Image" class="pull-right">
-                <h1>Hello, I'm Nick</h1><!--(´｡• ω •｡`) ♡  Kaomoji for fun-->
+                <!--<img src="./img/nick.jpg" alt="Nick Profile Image" class="pull-right">-->
+                <h1>Hello, I'm Nick</h1><!--(´｡• ω •｡`)♡  </h1> Kaomoji for fun-->
                     <div class="v-align content"> <!--Align-->
                         <div class="hello pull-left">
                             <div class="cycler">
@@ -150,9 +159,9 @@ Made Feb 2017
                             </div>
                         </div>
                     </div><br>
-                <!--#################-#-->
+                <!--###################-->
                 <!-- Double arrow down -->
-                <!--#################-#-->
+                <!--###################-->
                 <div class="v-align content hello"> <!--Align-->
                   <a href="#about" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
@@ -162,25 +171,31 @@ Made Feb 2017
         </div>
     </header>
 
-    <!--########-#-->
+    <!--##########-->
     <!-- About Me -->
-    <!--########-#-->
-    <section id="about" class="container content-section text-center">
+    <!--##########-->
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Astronomy compels the soul to look upwards and leads is from this world to another - Plato</span>
+    </div>
+    <section id="about" class="container content-section text-center aboutme-bg">
         <div class="aboutme">
             <div class="col-lg-8 col-lg-offset-2 top">
                 <h2>Who Am I?</h2>
                 <p>My name is Nickalas Reynolds. I am a first year graduate assistant at the University of Oklahoma. I spend most of my time analyzing data retrieved by <a href="https://science.nrao.edu/facilities/alma">ALMA</a> and working on the small radio telescope hosted by the University of Oklahoma on top of Nielsen Hall.</p>
                 <p>A few hobbies that I enjoy is customizing mechanical keyboards and imaging astronomical objects on the <a href="http://observatory.ou.edu">16 inch telescope</a>.</p>
-                <img src="./img/mk1.jpg" alt="Mechanical Keyboard Image" width="500px">
+                <img src="./img/mk1.jpg" alt="Mechanical Keyboard Image" min-width="100px" width=50%>
                 <p>I went to Clemson University for my Bachelors degree in Physics ('16) and am currently attending the University of Oklahoma for my Ph.D. in Astronomy. </p>
-                <img src="./img/ougrass1.jpg" alt="OU Campus Image" width="500px"><img src="./img/cu1.jpg" alt="CU Campus Image" width="500px">
+                <img src="./img/ougrass1.jpg" alt="OU Campus Image" min-width="100px" width=50%><img src="./img/cu1.jpg" alt="CU Campus Image" min-width="100px" width=50%>
                 </div>
             </div>
     </section>
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">...Man explores the universe around him and calls the adventure science - Edwin Hubble</span>
+    </div>
     <!--##################-->
     <!-- Projects Section -->
     <!--##################-->
-    <section id="projects" class="container content-section text-center">
+    <section id="projects" class="container content-section text-center project-bg">
         <div class="project-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -194,7 +209,10 @@ Made Feb 2017
     <!--################-->
     <!-- Social Section -->
     <!--################-->
-    <section id="social" class="container content-section text-center">
+        <div class="xcaption" >
+            <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Somewhere, something incredible is waiting to be known. - Carl Sagan</span>
+        </div>
+    <section id="social" class="container content-section text-center social-bg">
         <div class="social-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -226,7 +244,7 @@ Made Feb 2017
     <!--#################-->
     <!-- Contact Section -->
     <!--#################-->
-    <section id="contact" class="container outro-section outro text-center">
+    <section id="contact" class="container outro-section outro text-center outro-bg">
         <div class="row content">
             <div class="col-md-8 col-md-offset-2  outPopUp">
                 <h2>Let's talk...</h2>
@@ -235,7 +253,7 @@ Made Feb 2017
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://github.com/nickalaskreynolds" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a>
+                        <a href="https://github.com/nickalaskreynolds" class="btn btn-default btn-lg" target="blank"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a>
                         <a href="https://www.linkedin.com/in/nickalas-reynolds-098394bb" target="blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">LinkedIn</span></a>
                     </li>
                 </ul>

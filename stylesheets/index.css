@@ -111,3 +111,55 @@ html, body, .v-align {
   position: relative;
   top: 100%;
 }
+
+.aboutme-bg, .outro-bg, .intro-bg, .social-bg, .project-bg {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutme-bg {
+  background-image: url("../img/aboutme-bg.jpg");
+  min-height: 100%;
+}
+
+.outro-bg {
+  background-image: url("../img/outro-bg.jpg");
+  min-height: 100%;
+}
+
+.intro-bg {
+  background-image: url("../img/intro-bg.jpg");
+  min-height: 100%;
+}
+.social-bg {
+  background-image: url("../img/social-bg.jpg");
+  min-height: 100%;
+}
+
+.project-bg {
+  background-image: url("../img/project-bg.jpg");
+  min-height: 100%;
+}
+
+.xcaption {
+  position: relative;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color:#ddd;
+  background-color:#282E34;
+}
+
+.xcaption span.border {
+  vertical-align: middle;
+  color:#ddd;
+  background-color:#282E34;
+  padding: 18px;
+  font-size: 15px;
+  letter-spacing: 8px;
+}
+
