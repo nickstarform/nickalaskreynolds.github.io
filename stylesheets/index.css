@@ -2,6 +2,35 @@ html, body, .v-align {
   height: 100%;
 }
 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+.rart {
+    text-align: left;
+    width: 50%;
+}
+
+.lart {
+    text-align: left;
+    width: 50%;    
+}
 .v-align {
   display: inline-block;
   vertical-align: middle;
@@ -21,27 +50,52 @@ html, body, .v-align {
   height: 128px;
   color: white;
 }
-.content img { padding-right: 8px; }
+.content img { 
+  padding-right: 8px; 
+}
 
-.hello { text-align: left; }
-.hello h1 { margin: 0; }
+.hello { 
+  text-align: left; 
+}
+
+.hello h1 {
+ margin: 0; 
+}
 
 .words {
   list-style-type: none;
   padding-left: 0;
   overflow: hidden;
 }
+
 .linel {
   list-style-type: none;
   padding-left: 0;
   overflow: hidden;
 }
+
 .liner {
   list-style-type: none;
   padding-left: 0;
   overflow: hidden;
 }
-.cycler ul li { text-align: left; }
+
+.linel2 {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.liner2 {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.cycler ul li { 
+  text-align: left; 
+}
+
 .cycler ul li span {
   text-align: left;
   white-space: nowrap;
@@ -55,7 +109,10 @@ html, body, .v-align {
   height: 2em;
 }
 
-.cycler_l ul li { text-align: left; }
+.cycler_l ul li { 
+  text-align: left; 
+}
+
 .cycler_l ul li span {
   text-align: left;
   white-space: nowrap;
@@ -68,13 +125,51 @@ html, body, .v-align {
   line-height: 2em;
   height: 2em;
 }
-.cycler_r ul li { text-align: right; }
+
+.cycler_l2 ul li { 
+  text-align: left; 
+}
+
+.cycler_l2 ul li span {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cycler_l2 {
+  display: list-inline;
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  height: 2em;
+}
+
+.cycler_r ul li { 
+  text-align: right; 
+}
+
 .cycler_r ul li span {
   text-align: right;
   white-space: nowrap;
 }
 
 .cycler_r {
+  display: list-inline;
+  position: relative;
+  overflow: hidden;
+  line-height: 2em;
+  height: 2em;
+}
+
+.cycler_r2 ul li { 
+  text-align: right; 
+}
+
+.cycler_r2 ul li span {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cycler_r2 {
   display: list-inline;
   position: relative;
   overflow: hidden;
@@ -112,7 +207,7 @@ html, body, .v-align {
   top: 100%;
 }
 
-.aboutme-bg, .outro-bg, .intro-bg, .social-bg, .project-bg {
+.aboutme-bg, .outro-bg, .intro-bg, .social-bg, .project-bg, .research-bg, .teaching-bg {
   position: relative;
   opacity: 0.8;
   background-attachment: fixed;
@@ -135,6 +230,7 @@ html, body, .v-align {
   background-image: url("../img/intro-bg.jpg");
   min-height: 100%;
 }
+
 .social-bg {
   background-image: url("../img/social-bg.jpg");
   min-height: 100%;
@@ -142,6 +238,16 @@ html, body, .v-align {
 
 .project-bg {
   background-image: url("../img/project-bg.jpg");
+  min-height: 100%;
+}
+
+.research-bg {
+  background-image: url("../img/research-bg.jpg");
+  min-height: 100%;
+}
+
+.teaching-bg {
+  background-image: url("../img/teaching-bg.jpg");
   min-height: 100%;
 }
 
@@ -162,4 +268,3 @@ html, body, .v-align {
   font-size: 15px;
   letter-spacing: 8px;
 }
-

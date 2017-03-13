@@ -73,20 +73,16 @@ Made Feb 2017
 			.aboutme-bg, .outro-bg, .intro-bg, .social-bg, .project-bg {
 				background-size: cover;
 			}
-		}	
+		}
+        @media all and (min-width: 768px) {.lart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.lart .rart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.rart{-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}}
 	</style>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!-- [if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif] -->
 </head>
 
 <!--######################################-->
 <!-- Information to Display on front page -->
 <!--######################################-->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
     <!--############-->
     <!-- Navigation -->
     <!--############-->
@@ -101,21 +97,22 @@ Made Feb 2017
                 </a>
             </div>
 
-<!--####################-->
-<!-- Bottom contact bar -->
-<!--####################-->
-    <div class="about clearfix navbar-fixed-bottom">
-        <p class="pull-left">Nickalas Reynolds</p>
-        <div class="social pull-right">
-            <a href="https://www.linkedin.com/in/nickalas-reynolds-098394bb" target="blank"><i class="fa fa-linkedin"></i></a>
-            <a><script>touch3("nickalaskreynolds","ou",5,"")</script></a>
-            <a href="https://github.com/nickalaskreynolds" target="blank"> <i class="fa fa-github"></i></a>
-            <a href="https://www.nhn.ou.edu/~reynolds/public_files" target="blank"><i class="fa fa-download"></i></a>
-        </div>
-    </div>
-            <!--##############################################################-->
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--##############################################################-->
+            <!--####################-->
+            <!-- Bottom contact bar -->
+            <!--####################-->
+            <div class="about clearfix navbar-fixed-bottom">
+                <p class="pull-left">Nickalas Reynolds</p>
+                <div class="social pull-right">
+                    <a href="https://www.linkedin.com/in/nickalas-reynolds-098394bb" target="blank"><i class="fa fa-linkedin"></i></a>
+                    <a><script>touch3("nickalaskreynolds","ou",5,"")</script></a>
+                    <a href="https://github.com/nickalaskreynolds" target="blank"> <i class="fa fa-github"></i></a>
+                    <a href="https://www.nhn.ou.edu/~reynolds/public_files" target="blank"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+
+            <!--#################-->
+            <!-- Navbar toggling -->
+            <!--#################-->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
@@ -129,17 +126,22 @@ Made Feb 2017
                         <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#social">Social</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
     </nav>
+
     <!--##############-->
     <!-- Intro Header -->
     <!--##############-->
@@ -164,6 +166,7 @@ Made Feb 2017
                             </div>
                         </div>
                     </div><br>
+
                 <!--###################-->
                 <!-- Double arrow down -->
                 <!--###################-->
@@ -172,16 +175,21 @@ Made Feb 2017
                     <i class="fa fa-angle-double-down animated"></i>
                   </a>
                 </div>
+
             </div>
         </div>
     </header>
 
-    <!--##########-->
-    <!-- About Me -->
-    <!--##########-->
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
     <div class="xcaption" >
         <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Astronomy compels the soul to look upwards and leads is from this world to another - Plato</span>
     </div>
+
+    <!--##########-->
+    <!-- About Me -->
+    <!--##########-->
     <section id="about" class="container content-section text-center aboutme-bg">
         <div class="aboutme">
             <div class="col-lg-8 col-lg-offset-2 top">
@@ -194,9 +202,14 @@ Made Feb 2017
                 </div>
             </div>
     </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->
     <div class="xcaption" >
         <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">...Man explores the universe around him and calls the adventure science - Edwin Hubble</span>
     </div>
+
     <!--##################-->
     <!-- Projects Section -->
     <!--##################-->
@@ -211,12 +224,85 @@ Made Feb 2017
             </div>
         </div>
     </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">The sky calls to us. If we do not destroy ourselves, we will one day venture to the stars. - Carl Sagan</span>
+    </div>
+
+    <!--##################-->
+    <!-- Research Section -->
+    <!--##################-->
+    <section id="research" class="research-bg research-section container">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="flex-container">
+                <h2>Research</h2>
+                <div class="lart">
+                    <h3 class="text-center">Current</h3> 
+                    <p>I am currently working with Dr. John Tobin,OU, on reducing ALMA cycle 4 data. This is an interesting forming triple star system located in the Perseus Cluster, L1448.</p>
+                    <p>Another project is the evaluating of column densities from a few hundred Class I/II protostars in Orion using the IRAM 30m telescope in Granada, Spain.</p>
+                    <img src="./img/l1448.jpg" width=100%>
+                </div>
+                <div class="rart">
+                    <h3 class="text-center">Past</h3> 
+                    <p>I worked with Dr. Sean Brittain, CU, on understanding and further catagorizing Herbig Ae/Be protostars. We analyzed different isotopologues to understand the disk kinematics of various systems.</p>
+                </div>
+            </div><br>
+            <h2>Papers</h2>
+            <p>A link to my current papers can be found on NASA/ADS or the arxiv:</p>
+            <ul>
+                <li><a href="https://arxiv.org/abs/1608.00986" target="blank">https://arxiv.org/abs/1608.00986</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">We are an impossibility in an impossible Universe - Ray Bradbury</span>
+    </div>
+
+    <!--##################-->
+    <!-- Teaching Section -->
+    <!--##################-->
+    <section id="teaching" class="teaching-bg teaching-section container">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div class="flex-container">
+            <h2>Teaching Experience</h2>
+            <h3>Current Semester</h3>
+            <p>None</p>
+            <h3 class="text-center">Past Semesters</h3>
+                <div class="lart">
+                    <h4 class="text-center">OU</h4>
+                    <p>Taught:</p>
+                    <ul>
+                        <li><span>(Fall '16) PHYS 1311 (3 sections): A physics lab for non-science majors.</span></li>
+                    </ul>
+                    <p>Volunteer for "Star Parties": Wednesday night, open-community star gazing sessions.</p>
+                </div>
+                <div class="rart">
+                    <h4 class="text-center">CU</h4> 
+                    <p>Tutor: Calculus and Physics for both science and non-science majors</p>
+                    <p>Mentor: "PandA Pals" which was a upper-classman and lower-classman mentorship pairing for the Physics department.</p>
+                    <p>Participated in many outreach science events to under-privilaged, under-represented, and/or under-educated communities surrounding Clemson. </p>
+                </div>
+            </div><br>
+        </div>
+    </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Somewhere, something incredible is waiting to be known. - Carl Sagan</span>
+    </div>
+
     <!--################-->
     <!-- Social Section -->
     <!--################-->
-        <div class="xcaption" >
-            <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Somewhere, something incredible is waiting to be known. - Carl Sagan</span>
-        </div>
     <section id="social" class="container content-section text-center social-bg">
         <div class="social-section">
             <div class="container">
@@ -239,9 +325,16 @@ Made Feb 2017
                                 <li><span class="lead">&nbsp;<a><script>touch2("bsteph14","ou",5,"","Brian Stephenson, OU")</script></a></span></li> 
                                 <li><span class="lead">&nbsp;<a><script>touch2("alekzanderkos","ou",5,"","Alek Kosakowski, OU")</script></a></span></li>
                                 <li><span class="lead">&nbsp;<a><script>touch2("paul.canton","ou",5,"","Paul Canton, OU")</script></a></span></li>
-                                <li><span class="lead">&nbsp;<a href="http://www.ou.edu/lunarsooners/index/Welcome.html" target="blank">Lunar Sooners, OU</a></span></li>
                                 <li><span class="lead">&nbsp;<a><script>touch2("hleien","g.clemson",5,"","Harrison Leiendecker, CU")</script></a></span></li>
                                 <li><span class="lead">&nbsp;<a><script>touch2("pkflana","g.clemson",5,"","Patrick Flanagan, CU")</script></a></span></li>
+                            </ul>
+                        </div>
+                    </div><br><br>
+                    <div class="pull-left">
+                        <div class="cycler_l">
+                            <span class="lead pull-left">Organizations:</span>
+                            <ul class="linel2 pull-left">
+                                <li><span class="lead">&nbsp;<a href="http://www.ou.edu/lunarsooners/index/Welcome.html" target="blank">Lunar Sooners, OU</a></span></li>   
                                 <li><span class="lead">&nbsp;<a href="http://www.clemson.edu/science/departments/physics-astro/academics/undergraduate/sps.html" target="blank">Society of Physics Students, CU</a></span></li>
                             </ul>
                         </div>
@@ -250,6 +343,14 @@ Made Feb 2017
             </div>
         </div>
     </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">We are the Cosmos made conscious - Brian Cox</span>
+    </div>
+
     <!--#################-->
     <!-- Contact Section -->
     <!--#################-->
@@ -268,6 +369,7 @@ Made Feb 2017
             </div>
         </div>
     </section>
+
     <!--########-->
     <!-- Footer -->
     <!--########-->
@@ -275,12 +377,12 @@ Made Feb 2017
         <div class="container text-center">
             <p>Copyright &copy; Reynolds 2017</p>
             <script class="container text-center" language="Javascript"> document.write("This page was last modified on: " + document.lastModified +"") </script><br>
+            <p>All pictures are the sole property of Nickalas Reynolds. Please do not use without his permission</p>
             <a>Please note that email addresses on this site are protected to avoid abuse by spammers. You will need a JavaScript-enabled browser to see the email addresses.</a>
         </div>
     </footer>
-
 </body>
-
 </html>
+
 <!--#############-->
 <!-- End of Code -->
