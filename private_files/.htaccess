@@ -1,0 +1,4 @@
+AuthType       Basic
+AuthName       Password
+AuthUserFile   /home/reynolds/.htpasswd
+Require user  reynolds
